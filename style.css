@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #FFA500; /* Brand Orange */
+    --primary-hover-color: #FFC864;
+    --text-color: #333333; /* Dark Gray for text */
+    --light-text-color: #777777; /* Lighter gray for secondary text */
+    --card-bg-color: #FFFFFF; /* White card background */
+    --body-bg-color: #F0F2F5; /* Light gray body background */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hr-color: #EAEAEA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--body-bg-color);
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    padding: 35px;
+    border-radius: 16px; /* Sharper corners */
+    box-shadow: 0 10px 30px var(--shadow-color);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo-container img {
+    max-width: 180px; /* Increased size by ~17% */
+    height: auto;
+    object-fit: contain;
+}
+
+.header {
+    margin-bottom: 0; /* Remove margin, use padding on hr instead */
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 8px;
+}
+
+.header .company {
+    font-size: 1.05em;
+    color: var(--light-text-color);
+    font-weight: 400;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--hr-color);
+    margin: 25px 0;
+}
+
+.contact-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 35px; /* Space above the CTA button */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Increased space between items */
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 18px;
+    fill: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.contact-item .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item .label {
+    font-size: 0.8em;
+    color: var(--light-text-color);
+    margin-bottom: 2px; /* Reduced space between label and data */
+    font-weight: 400;
+}
+
+.contact-item a, .address-text {
+    color: var(--text-color);
+    text-decoration: none;
+    word-break: break-word; /* Better word wrapping */
+    font-weight: 500;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+.save-contact-btn {
+    display: block; /* Changed to block for full width */
+    width: 100%;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 12px; /* Sharper corners */
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto; /* Pushes the button to the bottom */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+.save-contact-btn:hover {
+    background-color: var(--primary-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 165, 0, 0.35);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header .company {
+        font-size: 1em;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .contact-list {
+        margin-bottom: 30px;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
+    }
+
+    .save-contact-btn {
+        font-size: 1em;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .contact-item a, .address-text {
+        font-size: 0.9em;
+    }
+}
