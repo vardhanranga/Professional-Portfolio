@@ -12,7 +12,7 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             background-color: #f0f2f5;
-            color: #1c1e21;
+            color: rgb(92,92,92);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,12 +55,12 @@
         .header h1 {
             font-size: 2em;
             margin: 0 0 5px;
-            color: #111;
+            color: rgb(92,92,92);
             font-weight: 600;
         }
         .header .company {
             font-size: 1.15em;
-            color: #660000; /* Reddish-brown from logo */
+            color: rgb(92,92,92); /* Reddish-brown from logo */
             margin-bottom: 0;
             font-weight: 500;
         }
@@ -68,7 +68,7 @@
             display: block;
             width: 100%;
             padding: 12px;
-            background-color: #003399; /* Primary blue from logo */
+            background-color: rgb(225,132,56); /* Primary blue from logo */
             color: #fff; /* Optimized */
             border: none;
             border-radius: 8px;
@@ -80,7 +80,7 @@
             transition: background-color 0.3s ease;
         }
         .save-contact-btn:hover {
-            background-color: #002266; /* Darker shade of logo blue */
+            background-color: rgb(133, 75, 29); /* Darker shade of logo blue */
         }
         .contact-list {
             list-style: none;
@@ -97,7 +97,7 @@
             width: 20px;
             height: 20px;
             margin-right: 15px;
-            fill: #003399; /* Primary blue from logo for icons */
+            fill: rgb(225,132,56); /* Primary blue from logo for icons */
             flex-shrink: 0;
         }
         .contact-item .details {
@@ -118,24 +118,25 @@
         }
         .contact-item a:hover {
             text-decoration: underline;
-            color: #003399; /* Primary blue from logo for link hover */
+            color: rgb(225,132,56); /* Primary blue from logo for link hover */
         }
         .address-text {
              color: #1c1e21;
              font-weight: 500;
         }
     </style>
+    <link rel="icon" href="vfp_favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="card-container">
         <div class="card">
             <div class="logo-container">
-                <img src="mri-logo.webp" alt="Miryalguda Rice Industries Pvt. Ltd. Logo">
+                <img src="vfp-logo.webp" alt="Miryalguda Rice Industries Pvt. Ltd. Logo">
             </div>
 
             <div class="header">
                 <h1>Srivardhan Ranga</h1>
-                <p class="company">Miryalguda Rice Industries Pvt Ltd</p>
+                <p class="company">Vagdevi Food Products Pvt Ltd</p>
             </div>
 
             <button class="save-contact-btn" id="saveContactBtn">Save Contact</button>
@@ -152,22 +153,22 @@
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/></svg>
                     <div class="details">
                         <span class="label">Email</span>
-                        <a href="mailto:srivardhan@mririce.com">srivardhan@mririce.com</a>
+                        <a href="mailto:srivardhan@vagdevifoods.com">srivardhan@vagdevifoods.com</a>
                     </div>
                 </li>
                 <li class="contact-item">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2ZM16.89,15.5H15.11L14.14,12.83H9.86L8.89,15.5H7.11L11.06,7H12.94L16.89,15.5M10.39,11.36H13.61L12,8.16L10.39,11.36Z"/></svg>
                     <div class="details">
                         <span class="label">Company Website</span>
-                        <a href="https://mririce.com/" target="_blank" rel="noopener noreferrer">mririce.com</a>
+                        <a href="https://vagdevifoods.com/" target="_blank" rel="noopener noreferrer">vagdevifoods.com</a>
                     </div>
                 </li>
                 <li class="contact-item">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,11.5A2.5,2.5 0 0,0 9.5,14A2.5,2.5 0 0,0 12,16.5A2.5,2.5 0 0,0 14.5,14A2.5,2.5 0 0,0 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>
                     <div class="details">
                         <span class="label">Address</span>
-                        <a href="https://maps.app.goo.gl/GWT63vzqUKALDG1Q9" target="_blank" rel="noopener noreferrer" class="address-text">
-                            MRI, Miryalaguda, Telangana
+                        <a href="https://maps.app.goo.gl/kVrtUq4yYSJQ89vo6" target="_blank" rel="noopener noreferrer" class="address-text">
+                            Vagdevi Food Products, Yadgarpalle, TG
                         </a>
                     </div>
                 </li>
@@ -189,10 +190,10 @@
                 'VERSION:3.0',
                 'N:Ranga;Srivardhan;;;',
                 'FN:Srivardhan Ranga',
-                'ORG:Miryalguda Rice Industries Pvt. Ltd.',
+                'ORG:Vagdevi Food Products Private Limited',
                 'TEL;TYPE=CELL,VOICE:+919866689944',
-                'EMAIL;TYPE=INTERNET,PREF:srivardhan@mririce.com',
-                'URL;TYPE=WORK:https://mririce.com/',
+                'EMAIL;TYPE=INTERNET,PREF:srivardhan@vagdevifoods.com',
+                'URL;TYPE=WORK:https://vagdevifoods.com/',
                 'URL:https://www.linkedin.com/in/srivardhan-ranga/',
                 'ADR;TYPE=WORK:;;MRI;Miryalaguda;Telangana;508207;India',
                 'END:VCARD'
